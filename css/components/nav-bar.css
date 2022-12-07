@@ -17,19 +17,9 @@
 }
 
 .nav__notification {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   left: 15px;
   bottom: 10px;
-  width: 20px;
-  height: 20px;
-  background-color: tomato;
-  border-radius: 10px;
-  font-size: small;
-  font-weight: 600;
-  color: white;
 }
 .nav__dot {
   position: absolute;

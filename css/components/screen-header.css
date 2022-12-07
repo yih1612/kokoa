@@ -6,7 +6,7 @@
   top: 26px;
   width: 100%;
   box-sizing: border-box;
-  padding: 25px 25px 20px 25px;
+  padding: var(--horizontal-space);
   background-color: white;
 }
 .screen-header__title {
@@ -15,4 +15,9 @@
 }
 .screen-header__icons span {
   margin-left: 25px;
+}
+
+/* status-bar + screen-header : height */
+.position-fixed-blank {
+  margin-top: 123px;
 }
