@@ -1,6 +1,7 @@
 .user-component {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 20px;
 }
 .user-component,
 .user-component__column:first-child {
@@ -21,7 +22,7 @@
 .user-component__subtitle {
   margin-top: 8px;
   font-size: 17px;
-  color: rgba(0, 0, 0, 0.5);
+  color: var(--gray);
 }
 
 .user-component__avatar--xl {

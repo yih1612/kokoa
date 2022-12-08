@@ -13,7 +13,7 @@
 
 .friends-screen__channel {
   margin-top: 20px;
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: var(--main-border);
   padding-top: 15px;
 }
 .friends-screen__channel-header {
@@ -21,5 +21,5 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
-  color: rgba(0, 0, 0, 0.4);
+  color: var(--gray);
 }

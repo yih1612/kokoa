@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find - Kokoa Clone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">Find</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-regular fa-magnifying-glass fa-xl"></i></span>
+        <span>
+          <div class="screen-header__dot badge"></div>
+          <i class="fa-solid fa-gear fa-xl"></i>
+        </span>
+      </div>
+    </header>
+
+    <div class="position-fixed-blank"></div>
+
+    <main class="main-screen">
+      <div class="find-icons">
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-qrcode"></i>
+          <span>QR Code</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-address-book"></i>
+          <span>Add by Contacts</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-solid fa-fingerprint"></i>
+          <span>Add by ID</span>
+        </div>
+        <div class="find-icons__icon">
+          <i class="fa-regular fa-envelope"></i>
+          <span>Invite</span>
+        </div>
+      </div>
+      <div class="recommended-friends">
+        <h6 class="recommended-friends__title">Recommended Friends</h6>
+        <span>You have no recommended friends</span>
+      </div>
+      <div class="open-chat">
+        <div class="open-chat__header">
+          <h4>Open Chat</h4>
+          <span
+            >Go to Openchat Home<i class="fa-solid fa-chevron-right fa-xs"></i
+          ></span>
+        </div>
+      </div>
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">#Gryffindor</h5>
+          <h6 class="open-post__hashtags">#lion #red #friends</h6>
+          <div class="open-post__members">
+            <img
+              src="https://w.namu.la/s/56dbb18807535c4e67a2c9c325b3217661febb206a58e88aaa54d91c5396db108826dc0241e9c1a7fce31c055bc1b3571512112fbe7986d85ecf872b17dfb97352867216400a687713ef52b005f314d6322806287adbc717c3c8659bddd458f8b4f64e97ebf8a8ea1ed5a9d8b79ab4f3"
+            />
+            <span class="open-post__member-count">802 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img
+              src="https://w.namu.la/s/e07d7b054a7bc5cf460eeb4e4c19f35092685251bdf8ae4e08b83cea5ead65161ad58b7b8dd99ed7c93b100538334321e50f58473890cef4415c426d4fdbc2df66290537851db46f02f1db3fc8e4724f9f749b1165f6e89a74e6fe60fd0f035829427c7be6c36afadf614486052da99b"
+            />
+            <div class="open-post__heart-count">
+              <i class="fa-solid fa-heart fa-xs"></i>326
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="open-post">
+        <div class="open-post__column">
+          <h5 class="open-post__title">#Slytherin</h5>
+          <h6 class="open-post__hashtags">#snake #green #onlyone</h6>
+          <div class="open-post__members">
+            <img
+              src="https://w.namu.la/s/7a41faaffbc04f0cd6d97f170f885108cb2d9a32ae869fd8a66f68efc2f083267fed093f611d6e0527f1e047079562127f6f92890a9f87c934eed75ba577407cea50782c69d9e296a9a2419cb11bdf5b81e073334baf380ad39c9d673d51b8f9"
+            />
+            <span class="open-post__member-count">299 members</span>
+            <div class="divider"></div>
+            <span class="open-post__member-status">Active</span>
+          </div>
+        </div>
+        <div class="open-post__column">
+          <div class="open-post__photo">
+            <img
+              src="https://w.namu.la/s/bc40cf18a0159a5abaec580254f45a0f2b58feb40454a650432fa02588e5ca411447807a69cefb052666f658a3e64e0fb61ef926caf345abb6baaaa6a0f48260a7946f0da95320ec8cedb89664b1a19e0b7a7aa65617fcd1219b722403fc15ccec96f294af150fa0f9511b82c2f2d053"
+            />
+            <div class="open-post__heart-count">
+              <i class="fa-solid fa-heart fa-xs"></i>215
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="fa-regular fa-user fa-xl"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">1</span>
+            <i class="far fa-comment fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html">
+            <i class="fas fa-magnifying-glass fa-xl"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav__dot badge"></div>
+            <i class="fas fa-solid fa-ellipsis fa-xl"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <script
+      src="https://kit.fontawesome.com/dd7667f96c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
