@@ -48,3 +48,11 @@
   /* display: block; */
   margin-bottom: 10px;
 }
+
+.user-component__message {
+  color: #2e363e;
+}
+.user-component__subtitle i {
+  margin-left: 5px;
+  color: #ff6554;
+}
