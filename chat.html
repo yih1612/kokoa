@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat w/ Hermione - Kokoa Clone</title>
+  </head>
+  <body id="chat-screen">
+    <div class="status-bar chat-status-bar">
+      <div class="status-bar__column">
+        <span>No service</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+      </div>
+      <div class="status-bar__column">
+        <span>110%</span>
+        <i class="fas fa-battery-full fa-lg"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="alt-header chat-alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-xl"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Hermione</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-magnifying-glass fa-xl"></i></span>
+        <span><i class="fa-solid fa-bars fa-xl"></i></span>
+      </div>
+    </header>
+
+    <div class="alt-position-fixed-blank"></div>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">Tuesday, June 30, 2023</div>
+
+      <div class="message-row">
+        <img
+          src="https://w.namu.la/s/f3acdf0cc5d909d6c28708410f8820c3cebc008019199c418a7963e74d7842ded38f6ad9b32dde61abdcc90537f5cf9fb54c14b849414fbc843057dd24f0bce59ad771bcd3487499e2fcd67aad5ae16b0008bb557843c02abf31309d3295759823d9c98e5e07b152ffe81fe9c89dfcc7"
+        />
+        <div class="message-row__content">
+          <span class="message__author">Hermione</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="message-row message-row--own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi, What's wrong??</span>
+            <span class="message__time">21:27</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <form class="reply">
+      <div class="reply__column">
+        <i class="fa-regular fa-square-plus"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="fa-regular fa-face-smile"></i>
+        <button>
+          <i class="fa-solid fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
+
+    <script
+      src="https://kit.fontawesome.com/dd7667f96c.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

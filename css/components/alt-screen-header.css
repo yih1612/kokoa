@@ -1,0 +1,35 @@
+.alt-header {
+  z-index: 1;
+  position: fixed;
+  top: 26px;
+  width: 100%;
+  padding: 15px var(--horizontal-space);
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  background-color: white;
+}
+.alt-header__title {
+  font-size: 22px;
+  font-weight: 600;
+}
+.alt-header__column {
+  width: 33%;
+}
+.alt-header__column:first-child {
+  margin-right: auto;
+}
+.alt-header__column:nth-child(2) {
+  text-align: center;
+}
+.alt-header__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.alt-header__column:last-child span:not(:first-child) {
+  margin-left: 25px;
+}

@@ -1,0 +1,137 @@
+#chat-screen,
+.chat-status-bar,
+.chat-alt-header {
+  background-color: #abc0d0;
+}
+
+#chat-screen {
+  height: 300vh;
+}
+
+.main-chat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 110px;
+}
+
+.chat__timestamp {
+  padding: 8px 12px;
+  margin-bottom: 25px;
+  border-radius: 20px;
+  background-color: #91a3b2;
+  font-size: 13px;
+  color: #eff3f5;
+}
+
+.message-row {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.message-row img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+  border-radius: 40%;
+  object-fit: cover;
+}
+.message__author {
+  display: block;
+  margin-bottom: 5px;
+  opacity: 0.7;
+}
+.message__info {
+  display: flex;
+  align-items: flex-end;
+}
+.message__bubble {
+  padding: 12px 14px;
+  margin-right: 5px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  background-color: white;
+  font-size: 18px;
+}
+.message__time {
+  opacity: 0.7;
+  font-size: 12px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+.message-row--own .message__bubble {
+  background-color: var(--yellow);
+  border-top-right-radius: 0px;
+  border-top-left-radius: 15px;
+  margin-right: 0;
+  margin-left: 5px;
+}
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.reply {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 5px 15px;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.reply__column:first-child {
+  width: 10%;
+  font-size: 28px;
+}
+.reply__column:last-child {
+  position: relative;
+  width: 90%;
+}
+
+.reply__column > i {
+  opacity: 0.5;
+}
+
+.reply input {
+  width: 100%;
+  padding: 11px;
+  border: var(--main-border);
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+.reply input::placeholder {
+  font-size: 16px;
+  opacity: 0.5;
+}
+
+.reply__column:last-child > i,
+.reply__column button {
+  position: absolute;
+  right: 2px;
+  top: 2px;
+}
+.reply__column:last-child > i {
+  right: 55px;
+  top: 7px;
+  font-size: 25px;
+}
+.reply__column button {
+  background-color: var(--yellow);
+  width: 35px;
+  height: 35px;
+  border: none;
+  border-radius: 50%;
+  font-size: 21px;
+}
+
+/* :active 사용자가 활성화한 요소를 나타낸다(마우스 버튼을 누르는 순간부터 떼는 시점까지) */
+/* :focus  보통 사용자가 요소를 클릭 또는 탭하거나, 키보드 Tab 키로 선택했을 때 발동 */
+.reply__column button:focus,
+.reply__column button:active {
+  outline: none;
+}

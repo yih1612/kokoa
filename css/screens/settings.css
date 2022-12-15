@@ -1,0 +1,24 @@
+.settings-list {
+  padding-top: 10px;
+}
+.settings__setting {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  font-size: 18px;
+}
+.settings__setting i {
+  font-size: 20px;
+  width: 30px;
+  opacity: 0.9;
+}
+.settings__setting-column:last-child {
+  opacity: 0.6;
+}
+
+/* status-bar + alt-screen-header : height */
+.alt-position-fixed-blank {
+  margin-top: 78px;
+}
