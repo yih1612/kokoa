@@ -1,0 +1,13 @@
+@keyframes rolyPoly {
+  25% {
+    transform: rotate(-30deg);
+  }
+
+  75% {
+    transform: rotate(30deg);
+  }
+}
+
+.chats__notification {
+  animation: rolyPoly 1.5s linear infinite;
+}
