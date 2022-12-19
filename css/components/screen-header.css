@@ -27,6 +27,19 @@
   border-radius: 2.5px;
 }
 
+@keyframes retateCog {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-gear:hover {
+  animation: retateCog 1.4s linear infinite;
+}
+
 /* status-bar + screen-header : height */
 .position-fixed-blank {
   margin-top: 123px;

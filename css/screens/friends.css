@@ -44,6 +44,6 @@
   width: 100vw;
   background-color: var(--yellow);
   font-size: 130px;
-  animation: hideSplashScreen 0.4s ease-in-out forwards;
-  animation-delay: 1s;
+  animation: hideSplashScreen 0.5s ease-in-out forwards;
+  animation-delay: 0.5s;
 }

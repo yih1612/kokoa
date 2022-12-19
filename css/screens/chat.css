@@ -8,11 +8,23 @@
   height: 300vh;
 }
 
+@keyframes fadeIn {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+
 .main-chat {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 110px;
+  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -24,10 +36,20 @@
   color: #eff3f5;
 }
 
+@keyframes massageLeft {
+  from {
+    transform: translateX(-50px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .message-row {
   display: flex;
   width: 100%;
   margin-bottom: 20px;
+  animation: massageLeft 0.8s linear;
 }
 .message-row img {
   width: 50px;
@@ -44,6 +66,7 @@
 .message__info {
   display: flex;
   align-items: flex-end;
+  animation-delay: 1s;
 }
 .message__bubble {
   padding: 12px 14px;
@@ -58,8 +81,18 @@
   font-size: 12px;
 }
 
+@keyframes massageRight {
+  from {
+    transform: translateX(50px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: massageRight 0.8s linear;
 }
 .message-row--own .message__bubble {
   background-color: var(--yellow);
@@ -82,6 +115,7 @@
   padding: 5px 15px;
   background-color: white;
   box-sizing: border-box;
+  transition: transform 0.3s ease-in-out;
 }
 
 .reply__column:first-child {
@@ -104,6 +138,7 @@
   border-radius: 20px;
   box-sizing: border-box;
   font-size: 16px;
+  transition: all 0.3s ease-in-out;
 }
 .reply input::placeholder {
   font-size: 16px;
@@ -135,4 +170,27 @@
 .reply__column button:focus,
 .reply__column button:active {
   outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-face-smile,
+.reply button {
+  /* .reply에 transition을 다 적용시켰기에 안써도 되지 않을까 싶음 */
+  transition: opacity 0.3s ease-in-out;
+}
+
+/* .reply:focus-within: reply 클래스 내부에 어떤 element가 focus되어 있다면이라는 뜻*/
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-face-smile,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply input:focus {
+  width: 97vw;
+  transform: translateX(-11%) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
 }
