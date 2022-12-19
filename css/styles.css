@@ -11,6 +11,8 @@
 @import "./components/alt-screen-header.css";
 @import "./components/user-component.css";
 @import "./components/icon-row.css";
+@import "./components/no-mobile.css";
+@import "./components/no-landscape.css";
 
 /* Screens */
 @import "./screens/login.css";
