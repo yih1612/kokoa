@@ -33,7 +33,7 @@
   color: rgba(0, 0, 0, 0.4);
 }
 #login-form input:focus {
-  border-color: var(--brown);
+  border-color: var(--yellow);
 }
 #login-form input[type="submit"] {
   padding: 20px 0;

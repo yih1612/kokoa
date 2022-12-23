@@ -8,12 +8,13 @@
   align-items: center;
   width: 25%;
   padding-bottom: 30px;
+  /* margin: 20px; */
   box-sizing: border-box;
   transition: color 0.3s ease-in-out;
 }
 .icon-row__icon:hover {
   cursor: pointer;
-  color: black;
+  color: var(--yellow);
 }
 .icon-row__icon i {
   font-size: 30px;
